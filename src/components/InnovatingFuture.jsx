@@ -17,7 +17,6 @@ const InnovatingFuture = () => {
       className="bg-gray-900 text-white px-4 sm:px-6 lg:px-20 py-20 flex flex-col lg:flex-row lg:items-center"
     >
       <div className="container max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
-        {/* Left Content */}
         <motion.div
           initial={{ y: 80, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : {}}
@@ -34,7 +33,6 @@ const InnovatingFuture = () => {
             From advanced software development to robust cybersecurity, our team of
             experts is committed to providing tailored solutions.
           </p>
-          {/* Values */}
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
               <img src={InnovationFirst} alt="Innovation First" className="h-10 w-10" />
@@ -51,7 +49,6 @@ const InnovatingFuture = () => {
               </div>
             </div>
           </div>
-          {/* Counters */}
           <div className="flex flex-col sm:flex-row justify-between max-w-md pt-8 gap-6">
             <div>
               <p className="text-4xl font-bold">
@@ -73,7 +70,6 @@ const InnovatingFuture = () => {
             </div>
           </div>
         </motion.div>
-        {/* Right Image */}
         <motion.div
           initial={{ y: 80, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : {}}
@@ -85,7 +81,6 @@ const InnovatingFuture = () => {
             alt="AI Illustration"
             className="w-full max-w-xl object-contain"
           />
-          {/* Client Happy Box */}
           <motion.div
             initial={{ y: 40, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
