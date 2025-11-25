@@ -8,18 +8,15 @@ import HappyClient2 from "../assets/images/HappyClient2.jpg";
 import HappyClient3 from "../assets/images/HappyClient3.jpg";
 import HappyClient4 from "../assets/images/HappyClient4.jpg";
 import Counter from "./counter.jsx";
-
 const InnovatingFuture = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
-
   return (
     <section
       ref={sectionRef}
       className="bg-gray-900 text-white px-4 sm:px-6 lg:px-20 py-20 flex flex-col lg:flex-row lg:items-center"
     >
       <div className="container max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
-
         {/* Left Content */}
         <motion.div
           initial={{ y: 80, opacity: 0 }}
@@ -30,16 +27,13 @@ const InnovatingFuture = () => {
           <p className="text-[#49FBDF] mb-2 text-sm font-medium border border-[#1E293B] rounded-lg px-4 py-2">
             Who we are
           </p>
-
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             Innovating the Future, <br /> One Solution at a Time
           </h1>
-
           <p className="text-[#B2B3C7] text-lg">
             From advanced software development to robust cybersecurity, our team of
             experts is committed to providing tailored solutions.
           </p>
-
           {/* Values */}
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
@@ -49,7 +43,6 @@ const InnovatingFuture = () => {
                 <p className="text-[#B2B3C7]">Constantly exploring new technologies</p>
               </div>
             </div>
-
             <div className="flex items-center space-x-4">
               <img src={IntegrityTrust} alt="Integrity & Trust" className="h-10 w-10" />
               <div>
@@ -58,7 +51,6 @@ const InnovatingFuture = () => {
               </div>
             </div>
           </div>
-
           {/* Counters */}
           <div className="flex flex-col sm:flex-row justify-between max-w-md pt-8 gap-6">
             <div>
@@ -67,14 +59,12 @@ const InnovatingFuture = () => {
               </p>
               <p className="text-[#49FBDF]">Projects Completed</p>
             </div>
-
             <div>
               <p className="text-4xl font-bold">
                 <Counter to={250} start={isInView} />+
               </p>
               <p className="text-[#49FBDF]">Satisfied Clients</p>
             </div>
-
             <div>
               <p className="text-4xl font-bold">
                 <Counter to={95} start={isInView} />%
@@ -83,7 +73,6 @@ const InnovatingFuture = () => {
             </div>
           </div>
         </motion.div>
-
         {/* Right Image */}
         <motion.div
           initial={{ y: 80, opacity: 0 }}
@@ -96,7 +85,6 @@ const InnovatingFuture = () => {
             alt="AI Illustration"
             className="w-full max-w-xl object-contain"
           />
-
           {/* Client Happy Box */}
           <motion.div
             initial={{ y: 40, opacity: 0 }}
@@ -119,10 +107,8 @@ const InnovatingFuture = () => {
             </p>
           </motion.div>
         </motion.div>
-
       </div>
     </section>
   );
 };
-
 export default InnovatingFuture;
