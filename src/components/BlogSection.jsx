@@ -61,8 +61,6 @@ export default function BlogSection() {
                 <p className="text-gray-400 text-sm mt-3 leading-relaxed">
                   {post.desc}
                 </p>
-
-                {/* Button */}
                 <button className="mt-6 bg-linear-to-r from-blue-600 to-indigo-600 
                                    text-white px-5 py-2 rounded-md font-medium 
                                    hover:cursor-pointer transition w-full sm:w-auto">
