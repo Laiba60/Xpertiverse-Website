@@ -37,7 +37,6 @@ export default function NexoraFAQ() {
         Frequently Asked Questions
       </h2>
     </div>
-
    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
   <div>
     <ul className="space-y-6">
@@ -50,15 +49,12 @@ export default function NexoraFAQ() {
             className="w-full flex justify-between items-center text-left text-xl font-medium transition "
           >
             {index + 1}. {item.q}
-
-            
             {openIndex === index ? (
               <CiSquareMinus className="text-[#49FBDF] text-2xl" />
             ) : (
               <CiSquarePlus className="text-white text-2xl" />
             )}
           </button>
-
           {openIndex === index && (
             <p className="mt-3 text-gray-400 text-base leading-relaxed">
               {item.a}
@@ -68,7 +64,6 @@ export default function NexoraFAQ() {
       ))}
     </ul>
   </div>
-
   <div className="flex justify-center">
     <img
       src={AskQs}
@@ -77,9 +72,6 @@ export default function NexoraFAQ() {
     />
   </div>
 </div>
-
-
-
   </div>
 </section>
   );
