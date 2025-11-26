@@ -31,9 +31,9 @@ const HeroSection = () => {
             {HERO_CONTENT.heading1}
           </h1>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold mb-4 leading-tight sm:leading-tight lg:leading-relaxed bg-linear-to-r from-red-500 to-red-800 bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold mb-4 leading-tight sm:leading-tight lg:leading-relaxed bg-linear-to-r from-[#F56716] to-[#EA4920] bg-clip-text text-transparent">
             {HERO_CONTENT.heading2}
-          </h1>
+          </h1>
 
           <p className="text-gray-400 text-lg mb-6">
             {HERO_CONTENT.description}
