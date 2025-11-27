@@ -67,13 +67,13 @@ const CombinedAboutInnovation = () => {
             About Us
           </button>
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-  <span className="text-white">
-    Innovating the Future
-  </span>{" "}
-  <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
-    with Trust & Excellence
-  </span>
-</h2>
+        <span className="text-white">
+        Innovating the Future
+        </span>{" "}
+        <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+       with Trust & Excellence
+      </span>
+      </h2>
 
           <p className="text-gray-300 text-lg max-w-xl">
             From advanced software development to robust cybersecurity, we help
