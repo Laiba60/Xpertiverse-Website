@@ -2,7 +2,7 @@ import techno1 from "../../assets/images/techno1.jpeg";
 import techno2 from "../../assets/images/techno2.jpg";
 import tech3 from "../../assets/images/tech3.jpeg";
 import tech4 from "../../assets/images/Launching.jfif";
-import techno1_alt from "../../assets/images/DigitalTransformation.jpg"; // example for gallery
+import techno1_alt from "../../assets/images/DigitalTransformation.jpg"; 
 import techno2_alt from "../../assets/images/Cybersecurity.jpg";
 
 export const projectsData = [

@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import { FaLightbulb, FaHandshake } from "react-icons/fa";
+import { FaHandshakeSimple } from "react-icons/fa6";
+import { FaUserCheck } from "react-icons/fa";
+import { LuShieldCheck } from "react-icons/lu";
+import { FaTrophy } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
-import { AiOutlineCheck } from "react-icons/ai";
 import Aiimg from "../assets/images/about1.png";
 import Aboutus from "../assets/images/about2.png";
 import HappyClient from "../assets/images/team1.jpg";
@@ -93,19 +96,19 @@ const CombinedAboutInnovation = () => {
           </div>
           <div className="grid grid-cols-2 gap-4 text-gray-300 pt-2">
             <div className="flex items-center gap-2 font-semibold">
-              <AiOutlineCheck className="text-red-500 text-xl" />
+              <FaHandshakeSimple className="text-red-500 text-xl" />
               Innovation First
             </div>
             <div className="flex items-center gap-2 font-semibold">
-              <AiOutlineCheck className="text-red-500 text-xl" />
+              <FaUserCheck className="text-red-500 text-xl" />
               Client-Centric
             </div>
             <div className="flex items-center gap-2 font-semibold">
-              <AiOutlineCheck className="text-red-500 text-xl" />
+              <LuShieldCheck className="text-red-500 text-xl" />
               Integrity & Trust
             </div>
             <div className="flex items-center gap-2 font-semibold">
-              <AiOutlineCheck className="text-red-500 text-xl" />
+              <FaTrophy className="text-red-500 text-xl" />
               Excellence
             </div>
           </div>
