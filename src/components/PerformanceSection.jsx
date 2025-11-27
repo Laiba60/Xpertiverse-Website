@@ -3,15 +3,12 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
 export default function PerformanceSection() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [startCount, setStartCount] = useState(false);
-
   useEffect(() => {
     if (inView) setStartCount(true);
   }, [inView]);
-
   const statsVariants = {
     hidden: { y: 40, opacity: 0 },
     visible: { 
@@ -20,7 +17,6 @@ export default function PerformanceSection() {
       transition: { staggerChildren: 0.2 } 
     }
   };
-
   const statItem = {
     hidden: { y: 20, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }
@@ -45,9 +41,6 @@ export default function PerformanceSection() {
      At a Glance
      </span>
 </motion.h2>
-
-
-
           <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={inView ? { y: 0, opacity: 1 } : {}}
