@@ -30,7 +30,6 @@ export default function ProjectOverviewSection() {
               alt="VR Technician"
               className="rounded-xl w-full h-64 sm:h-72 md:h-80 object-cover"
             />
-
             <img
               src="/images/project2.jpg"
               alt="Data Center Engineer"
@@ -85,7 +84,6 @@ export default function ProjectOverviewSection() {
                     <p className="text-gray-300">Constantly exploring new technologies.</p>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-4">
                   <FaUserTie className="text-[#DC2828] text-3xl" />
                   <div>

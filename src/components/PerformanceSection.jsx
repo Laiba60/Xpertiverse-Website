@@ -34,17 +34,20 @@ export default function PerformanceSection() {
         className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-0 xl:gap-8"
       >
         <div className="flex flex-col xl:flex-row gap-3 xl:gap-10 text-center lg:text-left w-full md:w-md xl:w-2xl">
-         <motion.h2
-        initial={{ y: 20, opacity: 0 }}
-         animate={inView ? { y: 0, opacity: 1 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-3xl 2xl:text-4xl font-semibold leading-tight"
+       <motion.h2
+       initial={{ y: 20, opacity: 0 }}
+       animate={inView ? { y: 0, opacity: 1 } : {}}
+       transition={{ duration: 0.8 }}
+       className="text-3xl 2xl:text-4xl font-semibold leading-tight"
 >
-        <span className="text-white">Our Performance </span>
-        <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
-        At a Glance
-        </span>
-        </motion.h2>
+     <span className="text-white whitespace-nowrap block mb-2">Our Performance</span>
+      <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text block">
+     At a Glance
+     </span>
+</motion.h2>
+
+
+
           <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={inView ? { y: 0, opacity: 1 } : {}}
