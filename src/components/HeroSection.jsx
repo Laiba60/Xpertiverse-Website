@@ -1,8 +1,7 @@
 import React from "react";
 import { HERO_CONTENT } from "../utils/constants/text";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom"; // Import Link
-
+import { Link } from "react-router-dom"; 
 const HeroSection = () => {
   return (
 <section
@@ -11,12 +10,7 @@ const HeroSection = () => {
     background: `radial-gradient(circle at center, #4D1D03, #000000 30%)`,
   }}
 >
-
-
-
       <div className="container max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
-
-        {/* Left Content */}
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -26,19 +20,15 @@ const HeroSection = () => {
           <p className="text-[#DC2828] mb-4 text-sm font-medium border border-[#1E293B] rounded-2xl px-2.5 py-3">
             {HERO_CONTENT.badge}
           </p>
-
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-white">
             {HERO_CONTENT.heading1}
           </h1>
-
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold mb-4 leading-tight sm:leading-tight lg:leading-relaxed bg-linear-to-r from-[#F56716] to-[#EA4920] bg-clip-text text-transparent">
             {HERO_CONTENT.heading2}
           </h1>
-
           <p className="text-gray-400 text-lg mb-6">
             {HERO_CONTENT.description}
           </p>
-
           <div className="flex flex-col sm:flex-row gap-4 w-full">
             
             <Link
@@ -49,8 +39,6 @@ const HeroSection = () => {
             >
               {HERO_CONTENT.buttons.primary}
             </Link>
-
-            
             <Link
               to="/aboutdetail"
               className="border border-[#DC2828] text-[#DC2828]

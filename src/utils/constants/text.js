@@ -10,11 +10,7 @@ export const HEADER_CONTENT = {
   ],
   buttonText: "Get Started",
 };
-
-
-
 import AiFinance from "../../assets/images/hero6.png";
-
 export const HERO_CONTENT = {
   badge: "Launch Your Professional Tech Website.",
   heading1: "Transform Your",
@@ -26,9 +22,6 @@ export const HERO_CONTENT = {
   },
   image: AiFinance,
 };
-
-
-
 export const PERFORMANCE_TEXT = {
   title: "Our Performance at a Glance",
   description:
@@ -39,9 +32,6 @@ export const PERFORMANCE_TEXT = {
     { number: "95%", label: "Client Satisfaction" },
   ],
 };
-
-
-
 import techno1 from "../../assets/images/techno1.jpeg";
 import techno2 from "../../assets/images/techno2.jpg";
 import tech3 from "../../assets/images/tech3.jpeg";
@@ -80,12 +70,7 @@ export const projectsData = [
     category: "Automation",
     rating: 5,
   },
-  // Add more projects here
 ];
-
-
-
-
 import { 
   FaLaptopCode, 
   FaMobileAlt, 
@@ -229,12 +214,9 @@ export const SERVICES_CONTENT = {
     }
   ]
 };
-
-
-
 export const TESTIMONIALS_CONTENT = {
   sectionTag: "Testimonials",
-  heading: "What Our Clients Say",
+  heading: "Hear Directly From Our Valued Clients About Their Experience",
 
   testimonials: [
     {
@@ -274,7 +256,6 @@ export const TESTIMONIALS_CONTENT = {
     },
   ],
 };
-
 export const SOLUTIONS_CONTENT = {
   leftFeatures: [
     {
@@ -295,8 +276,6 @@ export const SOLUTIONS_CONTENT = {
   },
   sectionTitle: "Innovative Solutions for a Smarter Future",
 };
-
-
 export const TEAM_CONTENT = {
   sectionTag: "Our Team Work",
   heading: "Meet the Mind Behind the Scenes",
@@ -341,9 +320,6 @@ export const TEAM_CONTENT = {
     },
   ],
 };
-
-// utils/constants/text.js
-
 export const HERO_TECH_CONTENT = {
   sectionTag: "Technology Solutions",
   heading: "Your Trusted Partner in Technology \n and Innovation",
@@ -360,9 +336,6 @@ export const HERO_TECH_CONTENT = {
     { value: "39+", label: "Awards Won" },
   ],
 };
-
-
-
 export const BLOG_CONTENT = {
   heading: {
     preTitle: "Our Blog",
@@ -395,20 +368,12 @@ export const BLOG_CONTENT = {
     },
   ],
 };
-
-
-// utils/constants/newsletter.js
-
 export const NEWSLETTER_CONTENT = {
   heading: "Get in Touch with Xpertiverse",
   description:
     "Have questions, feedback, or want to discuss a project? Reach out to our team and we’ll get back to you promptly.",
   buttonText: "Contact Us",
 };
-
-
-// utils/constants/footer.js
-
 export const FOOTER_CONTENT = {
   logo: "Xpertiverse",
   tagline: "Xpertiverse - Technology and IT Solutions",

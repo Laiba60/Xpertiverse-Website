@@ -83,9 +83,9 @@ export default function TestimonialsSection() {
             {sectionTag}
           </button>
          <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
-        <span className="text-white">What Our  </span>
+        <span className="text-white">Hear Directly From Our Valued  </span>
         <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
-         Clients Say
+         Clients About Their Experience
         </span>
         </h1>
         </motion.div>

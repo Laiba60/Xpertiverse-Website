@@ -67,7 +67,7 @@ const CombinedAboutInnovation = () => {
   <span className="text-white">
     Innovating the Future
   </span>{" "}
-  <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+  <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text whitespace-nowrap">
     with Trust & Excellence
   </span>
 </h2>

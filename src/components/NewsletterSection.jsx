@@ -3,36 +3,28 @@ import { NEWSLETTER_CONTENT } from "../utils/constants/text";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
-
 export default function NewsletterSection() {
   const navigate = useNavigate();
   const { heading, description, buttonText } = NEWSLETTER_CONTENT;
-
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const controls = useAnimation();
-
   React.useEffect(() => {
     if (inView) controls.start("visible");
   }, [inView, controls]);
-
   const textVariants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
-
   const buttonVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", delay: 0.2 } },
   };
-
   return (
     <section
       ref={ref}
       className="bg-black text-white py-28 px-4 sm:px-6 lg:px-20"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-
-        {/* Text */}
         <motion.div
           className="w-full md:w-3/4 text-center md:text-left space-y-6"
           initial="hidden"
@@ -47,16 +39,15 @@ export default function NewsletterSection() {
             {description}
           </p>
         </motion.div>
-
-   <motion.button
-  className="
-    cursor-pointer
-    bg-[#DC2828] text-white
-    border border-transparent
-    hover:bg-transparent hover:border-[#DC2828] hover:text-[#DC2828]
-    transition 
-    px-6 py-3 rounded-md text-lg font-medium 
-    w-full sm:w-auto
+        <motion.button
+        className="
+        cursor-pointer
+        bg-[#DC2828] text-white
+        border border-transparent
+         hover:bg-transparent hover:border-[#DC2828] hover:text-[#DC2828]
+        transition 
+        px-6 py-3 rounded-md text-lg font-medium 
+        w-full sm:w-auto
   "
   initial="hidden"
   animate={controls}
@@ -65,8 +56,6 @@ export default function NewsletterSection() {
 >
   {buttonText}
 </motion.button>
-
-
       </div>
     </section>
   );

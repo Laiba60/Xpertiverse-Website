@@ -20,13 +20,13 @@ export default function ServicesSection() {
             {sectionTag}
           </button>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-        <span className="text-white">
-         Smart solutions
+        <span className="text-white ">
+         Smart solutions for
         </span>{" "}
-        <span className=" bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text"> {/* Replace with any color */}
-         for modern businesses.
+        <span className=" bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text whitespace-nowrap"> 
+          modern businesses.
         </span>
-        </h1>
+        </h1> 
           <p className="text-gray-400 max-w-xl mx-auto">{description}</p>
         </motion.div>
         <div className="flex flex-wrap w-full lg:w-4/5 gap-6 justify-center">
