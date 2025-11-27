@@ -6,12 +6,9 @@ import { SERVICES_CONTENT } from "../utils/constants/text";
 export default function ServicesSection() {
   const { sectionTag, heading, description, cards } = SERVICES_CONTENT;
   const navigate = useNavigate();
-
   return (
     <section className="w-full bg-black text-white py-20 px-4 sm:px-6 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
-
-        {/* TOP TEXT */}
         <motion.div
           className="space-y-6 max-w-3xl"
           initial={{ opacity: 0, y: 30 }}
@@ -23,12 +20,15 @@ export default function ServicesSection() {
             {sectionTag}
           </button>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-            {heading}
-          </h1>
+        <span className="text-white">
+         Smart solutions
+        </span>{" "}
+        <span className=" bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text"> {/* Replace with any color */}
+         for modern businesses.
+        </span>
+        </h1>
           <p className="text-gray-400 max-w-xl mx-auto">{description}</p>
         </motion.div>
-
-        {/* CARDS */}
         <div className="flex flex-wrap w-full lg:w-4/5 gap-6 justify-center">
           {cards.map((card, i) => (
             <motion.div
@@ -48,7 +48,6 @@ export default function ServicesSection() {
                 <h3 className="text-xl font-semibold mb-2 text-center">{card.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed text-center">{card.desc}</p>
               </div>
-
               <button
                 onClick={() => navigate(`/service/${i}`)}
                 className="mt-6 px-4 py-2 text-sm font-semibold rounded-lg bg-[#DC2828] text-white border border-transparent hover:bg-transparent hover:text-[#DC2828] hover:border-[#DC2828] transition"

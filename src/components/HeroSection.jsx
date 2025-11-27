@@ -40,7 +40,7 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full">
-            {/* Primary Button - Link to Contact page */}
+            
             <Link
               to="/contact"
               className="cursor-pointer bg-[#DC2828] text-white border border-transparent
@@ -50,7 +50,7 @@ const HeroSection = () => {
               {HERO_CONTENT.buttons.primary}
             </Link>
 
-            {/* Secondary Button */}
+            
             <Link
               to="/aboutdetail"
               className="border border-[#DC2828] text-[#DC2828]
@@ -61,8 +61,6 @@ const HeroSection = () => {
              </Link>
           </div>
         </motion.div>
-
-        {/* Right Image */}
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -77,7 +75,6 @@ const HeroSection = () => {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
           />
         </motion.div>
-
       </div>
     </section>
   );

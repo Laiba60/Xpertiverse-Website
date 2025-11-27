@@ -63,9 +63,16 @@ const CombinedAboutInnovation = () => {
           <button className="text-[#DC2828] border border-[#1E293B] rounded-lg px-5 py-1">
             About Us
           </button>
-          <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-            Innovating the Future <br /> with Trust & Excellence
-          </h2>
+     <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+  <span className="text-white">
+    Innovating the Future
+  </span>{" "}
+  <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+    with Trust & Excellence
+  </span>
+</h2>
+
+
           <p className="text-gray-300 text-lg max-w-xl">
             From advanced software development to robust cybersecurity, we help
             clients transform challenges into opportunities with innovation and integrity.
