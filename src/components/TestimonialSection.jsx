@@ -2,32 +2,24 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { TESTIMONIALS_CONTENT } from "../utils/constants/text";
-
 export default function TestimonialsSection() {
   const { sectionTag, heading, testimonials } = TESTIMONIALS_CONTENT;
-
   const sliderRef = useRef(null);
   const containerRef = useRef(null);
-
   const [visibleCards, setVisibleCards] = useState(3);
   const [cardWidth, setCardWidth] = useState(350);
   const [offset, setOffset] = useState(0);
   const gap = 24;
-
-  // ---------- Calculate Perfect Card Width ----------
   useEffect(() => {
     const updateSizes = () => {
       const screen = window.innerWidth;
-
       let count = 3;
       if (screen < 480) count = 1;
       else if (screen < 768) count = 1;
       else if (screen < 1024) count = 2;
       else if (screen < 1440) count = 3;
       else count = 4;
-
       setVisibleCards(count);
-
       if (containerRef.current) {
         const containerWidth = containerRef.current.offsetWidth;
         const totalGaps = gap * (count - 1);
@@ -35,19 +27,15 @@ export default function TestimonialsSection() {
         setCardWidth(width);
       }
     };
-
     updateSizes();
     window.addEventListener("resize", updateSizes);
     return () => window.removeEventListener("resize", updateSizes);
   }, []);
 
   const loopedTestimonials = [...testimonials, ...testimonials];
-
-  // ---------- Auto Sliding ----------
   useEffect(() => {
     const slider = sliderRef.current;
     if (!slider) return;
-
     const interval = setInterval(() => {
       let newOffset = offset + cardWidth + gap;
       if (newOffset >= (cardWidth + gap) * testimonials.length) {
@@ -56,21 +44,16 @@ export default function TestimonialsSection() {
       } else {
         slider.style.transition = "transform 0.5s ease";
       }
-
       slider.style.transform = `translateX(-${newOffset}px)`;
       setOffset(newOffset);
-    }, 3000); // faster auto-slide
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, [offset, cardWidth, gap, testimonials.length]);
-
-  // ---------- Manual Slide ----------
   const moveSlider = (direction) => {
     const slider = sliderRef.current;
     if (!slider) return;
-
     let newOffset = offset;
-
     if (direction === "left") {
       newOffset -= cardWidth + gap;
       if (newOffset < 0) {
@@ -82,12 +65,10 @@ export default function TestimonialsSection() {
         newOffset = 0;
       }
     }
-
     slider.style.transition = "transform 0.5s ease";
     slider.style.transform = `translateX(-${newOffset}px)`;
     setOffset(newOffset);
   };
-
   return (
     <section className="w-full bg-black text-white py-24 px-6">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
@@ -101,14 +82,12 @@ export default function TestimonialsSection() {
           <button className="px-8 py-2 font-semibold text-[#DC2828] rounded-lg border border-gray-700 text-xs lg:text-sm">
             {sectionTag}
           </button>
-
          <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
-  <span className="text-white">What Our  </span>
-  <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
-   Clients Say
-  </span>
-</h1>
-
+        <span className="text-white">What Our  </span>
+        <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+         Clients Say
+        </span>
+        </h1>
         </motion.div>
         <div className="relative w-full">
           <button
