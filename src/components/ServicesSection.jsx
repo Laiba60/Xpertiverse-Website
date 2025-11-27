@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { SERVICES_CONTENT } from "../utils/constants/text";
-
 export default function ServicesSection() {
   const { sectionTag, heading, description, cards } = SERVICES_CONTENT;
   const navigate = useNavigate();

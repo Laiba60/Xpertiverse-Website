@@ -49,13 +49,13 @@ export default function NewsletterSection() {
         px-6 py-3 rounded-md text-lg font-medium 
         w-full sm:w-auto
   "
-  initial="hidden"
-  animate={controls}
-  variants={buttonVariants}
-  onClick={() => navigate("/contact")}
+      initial="hidden"
+      animate={controls}
+       variants={buttonVariants}
+       onClick={() => navigate("/contact")}
 >
-  {buttonText}
-</motion.button>
+      {buttonText}
+      </motion.button>
       </div>
     </section>
   );

@@ -63,16 +63,14 @@ const CombinedAboutInnovation = () => {
           <button className="text-[#DC2828] border border-[#1E293B] rounded-lg px-5 py-1">
             About Us
           </button>
-     <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-  <span className="text-white">
-    Innovating the Future
-  </span>{" "}
-  <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text whitespace-nowrap">
-    with Trust & Excellence
-  </span>
-</h2>
-
-
+          <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+          <span className="text-white">
+          Innovating the Future
+         </span>{" "}
+        <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text whitespace-nowrap">
+        with Trust & Excellence
+        </span>
+        </h2>
           <p className="text-gray-300 text-lg max-w-xl">
             From advanced software development to robust cybersecurity, we help
             clients transform challenges into opportunities with innovation and integrity.
@@ -131,8 +129,6 @@ const CombinedAboutInnovation = () => {
               <p className="text-[#DC2828]">Client Satisfaction</p>
             </div>
           </div>
-
-          
           <div className="pt-3">
             <button className="px-6 py-3 bg-[#DC2828]
                 text-white hover:bg-transparent border border-[#DC2828] hover:text-[#DC2828] hover:cursor-pointer 
@@ -146,5 +142,4 @@ const CombinedAboutInnovation = () => {
     </section>
   );
 };
-
 export default CombinedAboutInnovation;

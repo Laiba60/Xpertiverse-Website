@@ -31,7 +31,6 @@ export default function TestimonialsSection() {
     window.addEventListener("resize", updateSizes);
     return () => window.removeEventListener("resize", updateSizes);
   }, []);
-
   const loopedTestimonials = [...testimonials, ...testimonials];
   useEffect(() => {
     const slider = sliderRef.current;
@@ -47,7 +46,6 @@ export default function TestimonialsSection() {
       slider.style.transform = `translateX(-${newOffset}px)`;
       setOffset(newOffset);
     }, 3000); 
-
     return () => clearInterval(interval);
   }, [offset, cardWidth, gap, testimonials.length]);
   const moveSlider = (direction) => {
