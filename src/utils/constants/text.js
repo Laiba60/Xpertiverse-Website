@@ -40,7 +40,7 @@ export const PERFORMANCE_TEXT = {
   ],
 };
 
-// src/data/projectsData.js
+
 
 import techno1 from "../../assets/images/techno1.jpeg";
 import techno2 from "../../assets/images/techno2.jpg";

@@ -91,8 +91,6 @@ export default function TestimonialsSection() {
   return (
     <section className="w-full bg-black text-white py-24 px-6">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
-
-        {/* Heading */}
         <motion.div
           className="space-y-5 max-w-3xl"
           initial={{ opacity: 0, y: 30 }}
@@ -104,28 +102,27 @@ export default function TestimonialsSection() {
             {sectionTag}
           </button>
 
-          <h1 className="text-3xl lg:text-5xl font-bold leading-tight">{heading}</h1>
-        </motion.div>
+         <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
+  <span className="text-white">What Our  </span>
+  <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+   Clients Say
+  </span>
+</h1>
 
-        {/* Slider with Arrows */}
+        </motion.div>
         <div className="relative w-full">
-          {/* Left Arrow */}
           <button
             onClick={() => moveSlider("left")}
             className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-[#DC2828] hover:bg-[#1E293B] p-3 rounded-full text-white z-20 shadow-lg"
           >
             <FaArrowLeft />
           </button>
-
-          {/* Right Arrow */}
           <button
             onClick={() => moveSlider("right")}
             className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-[#DC2828] hover:bg-[#1E293B] p-3 rounded-full text-white z-20 shadow-lg"
           >
             <FaArrowRight />
           </button>
-
-          {/* Slider */}
           <div className="w-full overflow-hidden" ref={containerRef}>
             <div ref={sliderRef} className="flex" style={{ gap: `${gap}px` }}>
               {loopedTestimonials.map((t, i) => (
@@ -139,8 +136,6 @@ export default function TestimonialsSection() {
                   </p>
 
                   <div className="w-12 h-0.5 bg-[#DC2828] mb-4"></div>
-
-                   {/* ⭐ Star Ratings */}
                   <div className="flex space-x-1 mt-auto justify-center pb-4">
                     {Array.from({ length: 5 }).map((_, idx) => (
                       <span key={idx} className="text-yellow-400 text-2xl">
@@ -148,8 +143,6 @@ export default function TestimonialsSection() {
                       </span>
                     ))}
                   </div>
-
-                  {/* Name + Image */}
                   <div className="flex items-center mb-4">
                     {t.image && (
                       <img
@@ -163,14 +156,11 @@ export default function TestimonialsSection() {
                       <p className="text-[#DC2828] text-sm font-semibold">{t.role}</p>
                     </div>
                   </div>
-
-                 
                 </div>
               ))}
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
