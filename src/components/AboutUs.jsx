@@ -55,9 +55,9 @@ const CombinedAboutInnovation = () => {
             <p className="text-xs text-gray-400 mt-2">
               Lorem ipsum dolor sit amet, consectetur.
             </p>
+           </motion.div>
           </motion.div>
-        </motion.div>
-        <motion.div
+          <motion.div
           initial={{ y: 60, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
@@ -67,14 +67,13 @@ const CombinedAboutInnovation = () => {
             About Us
           </button>
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-        <span className="text-white">
-        Innovating the Future
-        </span>{" "}
-        <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
-       with Trust & Excellence
-      </span>
-      </h2>
-
+         <span className="text-white">
+          Innovating the Future
+          </span>{" "}
+          <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+           with Trust & Excellence
+         </span>
+          </h2>
           <p className="text-gray-300 text-lg max-w-xl">
             From advanced software development to robust cybersecurity, we help
             clients transform challenges into opportunities with innovation and integrity.
